@@ -19,7 +19,9 @@ pipeline {
     }
     
     stage('Deploy') {
-      sh 'echo "Deploying the software on Kubernetes"'
+      steps {
+        sh 'echo "Deploying the software on Kubernetes"'
+      }
     }
   }
 }
