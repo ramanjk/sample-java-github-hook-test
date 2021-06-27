@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Clone GIT repo') {
       steps {
-        sh 'sh "echo cloning git repository"'
+        sh 'echo cloning git repository'
       }
     }
 
