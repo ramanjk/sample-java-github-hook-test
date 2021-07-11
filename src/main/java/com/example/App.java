@@ -21,6 +21,7 @@ public class App {
         log.info("Java app started");
 	log.info("Rathinam Trainers");
 	log.info("Rathinam Consultants");
+	log.info("Jenkins training");
     }
 
     public String getStatus() {
