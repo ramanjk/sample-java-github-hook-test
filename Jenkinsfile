@@ -15,5 +15,11 @@ pipeline {
             sh './gradlew build'
         }
     }
+    stage('Docker image Build') {
+        steps {
+            sh "docker build -t rathinamtrainers/myjavaapp:${env.BUILD_ID} ."
+            sh "docker tag rathinamtrainers/myjavaapp:${env.BUILD_ID} rathinamtrainers/myjavaapp:latest"
+        }
+    }
   }
 }
