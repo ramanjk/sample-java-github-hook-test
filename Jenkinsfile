@@ -17,8 +17,8 @@ pipeline {
     }
     stage('Docker image Build') {
         steps {
-            sh "docker build -t rathinamtrainers/myjavaapp:${env.BUILD_ID} ."
-            sh "docker tag rathinamtrainers/myjavaapp:${env.BUILD_ID} rathinamtrainers/myjavaapp:latest"
+            sh "sudo docker build -t rathinamtrainers/myjavaapp:${env.BUILD_ID} ."
+            sh "sudo docker tag rathinamtrainers/myjavaapp:${env.BUILD_ID} rathinamtrainers/myjavaapp:latest"
         }
     }
   }
