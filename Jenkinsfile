@@ -7,7 +7,7 @@ pipeline {
   stages {
     stage('Clone GIT repo') {
       steps {
-        git credentialsId: 'c74c6485-9f3a-4da9-bc52-354dc2d5320d', url: 'https://github.com/rajanirugur/sample-java-project-demo1.git'
+        git credentialsId: '6478a9cf-dbae-41cc-8029-5a756048873a', url: 'https://github.com/ramanjk/sample-java-github-hook-test.git'
       }
     }
     stage('Gradle Build') {
